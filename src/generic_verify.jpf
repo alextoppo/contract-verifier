@@ -1,0 +1,12 @@
+target=GenericContractsTest
+target.args=JGraphTWrapper,JGraphTWrapper_contracts.txt
+classpath=/home/alex/Documents/Minor_Project/jpf_spf/genric
+
+vm.insn_factory.class=gov.nasa.jpf.symbc.SymbolicInstructionFactory
+listener=gov.nasa.jpf.symbc.SymbolicListener
+
+symbolic.min_int=-10
+symbolic.max_int=10
+symbolic.debug=true
+symbolic.lazy=true
+search.multiple_errors=true
